@@ -18,7 +18,7 @@ const App = () => (
           <Route path="/signup" component={SignUpPage}/>
           <Route path="/pw-forget" component={PasswordForgetPage}/>
           <Route path="/home" component={HomePage}/>
-          <Route path="/signin" component={AccountPage}/>
+          <Route path="/account" component={AccountPage}/>
           <Route path="/admin" component={AdminPage}/>
       </div>
   </Router>
