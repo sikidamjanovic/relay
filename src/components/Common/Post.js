@@ -124,7 +124,7 @@ const styles = {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        width: '60%'
+        width: '50%'
     },
     statTextStyke:{
         marginLeft: 6,
@@ -141,7 +141,7 @@ const styles = {
         alignItems: 'center'
     },
     postButtonsContainer:{
-        width: '40%',
+        width: '50%',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
