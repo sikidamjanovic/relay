@@ -11,7 +11,7 @@ import AdminPage from '../Admin'
 
 const App = () => (
   <Router>
-      <div>
+      <div style={styles.appStyle}>
           <Navigation/>
           <Route exact path="/" component={LandingPage}/>
           <Route path="/signin" component={SignInPage}/>
@@ -23,5 +23,12 @@ const App = () => (
       </div>
   </Router>
 );
+
+const styles = {
+    appStyle: {
+        minHeight: '100vh',
+        backgroundColor: '#FAFAFA'
+    }
+}
 
 export default App;

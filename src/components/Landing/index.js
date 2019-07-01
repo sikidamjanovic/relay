@@ -1,23 +1,37 @@
 import React from 'react';
+import Post from '../Common/Post'
+import Sidebar from '../Common/Sidebar'
 
 const Landing = () => (
   <div style={styles.containerStyle}>
-      <h1 style={styles.headerStyle}>Some Content</h1>
+      <div style={styles.sideBarContainerStyle}>
+        <Sidebar/>
+      </div>
+      <div style ={styles.postContainerStyle}>
+        <Post/>
+        <Post/>
+        <Post/>
+      </div>
   </div>
 );
 
 const styles = {
     containerStyle: {
-        height: '90vh',
-        backgroundColor: '#FAFAFA',
         display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
-    headerStyle: {
-        fontFamily: 'merriweather',
-        padding: 0,
-        margin: 0
+    postContainerStyle:{
+        maxWidth: 1000,
+        flexBasis: '60%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignContent: 'space-evenly',
+        margin: 20
+    },
+    sideBarContainerStyle: {
+        flexBasis: '20%',
+        margin: 20,
+        maxWidth: 300,
     }
 }
 
